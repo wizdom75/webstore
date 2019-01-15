@@ -1,0 +1,67 @@
+.category{
+
+
+  padding: 3rem;
+
+  @include breakpoint(small only){
+    padding-top: 2.5rem;
+  }
+  @include breakpoint(medium only){
+    padding-top: 2.5rem;
+  }
+
+  .display-products{
+    padding: 2rem;
+
+    @include breakpoint(small only){
+      padding: 0.7rem;
+      text-align: center;
+    }
+    a{
+      color: #333333;
+      &:focus{
+        outline-style: none;
+      }
+    }
+
+    .card{
+      padding: 0.9rem;
+      margin-bottom: 1rem;
+
+      .card-section{
+        margin-bottom: 0.7rem;
+
+        img{
+          border-radius: 0.5rem;
+          width: 200px !important;
+          height: 250px !important;
+        }
+
+        .button{
+          border-radius: 0.2rem;
+          cursor: pointer;
+          font-size: 0.8rem;
+
+          &.more{
+            color: #6E9fd1;
+            background-color: #ffffff;
+            border: 1px solid #6E9fd1;
+          }
+
+          &.cart{
+            color: #ffffff;
+            background-color: #6E9fd1;
+            border: 1px solid #6E9fd1;
+
+            &:hover{
+              background-color: lighten(#6E9fd1, 7%);
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+

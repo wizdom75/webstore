@@ -1,0 +1,78 @@
+.dashboard{
+  padding: 2rem 1rem;
+
+  .summary{
+
+    @include breakpoint(small only){
+      padding-bottom: 1rem;
+    }
+    .card{
+      width: 95%;
+      margin: 0 auto;
+      
+      .card-section{
+
+        .fa{
+          font-size: 2.5rem;
+
+          &.fa-shopping-cart{
+            color: #FF4500;
+          }
+          &.fa-thermometer-empty{
+            color: #da8301;
+          }
+          &.fa-money{
+            color: #008000;
+          }
+          &.fa-users{
+            color: #00BFff;
+          }
+          
+        }
+
+        p,h4{
+
+          @include breakpoint(medium only){
+            font-size: 0.9rem;
+          }
+          margin: 0;
+          padding: 0;
+          text-align: right;
+        }
+      }
+
+      .card-divider{
+        border-top: 1px solid #6c9a9d;
+        background-color: #ffffff;
+
+        a{
+          color: #337ab7;
+        }
+      }
+    }
+  }
+
+  .graph{
+    margin: 2rem 0.5rem;
+    @include breakpoint(small only){
+      margin-top: 1rem;
+    }
+
+    .card{
+      width: 98%;
+
+    }
+
+    canvas{
+      height: 300px !important;
+      @include  breakpoint(small only){
+        height: auto !important;
+      }
+
+    }
+
+    .monthly-sales{
+
+    }
+  }
+}
